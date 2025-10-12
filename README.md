@@ -45,4 +45,5 @@ Gleb Ustimenko for LighSync Games
 
 ## Лицензия
 
+API распространяется по лицензии MIT
 (C) LighSync Games. 2023-2025
