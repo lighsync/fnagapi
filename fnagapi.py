@@ -239,8 +239,12 @@ class Time:
         return read_at_config("EducationEdition", "time")
     
     def set_time(self, time: int):
+        if time < 0 and time > 360:
+            print("[TIME]: Время не меньше 0 и не больше 360 игровых тактов")
+            return 
         write_at_config("EducationEdition", "time", time)
         self.current_time = time
+        print(f"[TIME]: Время установлено на: {time} тактов")
     
     def disable_time(self):
         self.enable = False
